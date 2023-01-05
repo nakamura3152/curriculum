@@ -10,9 +10,8 @@ public class Check {
 	
 	public static void main(String[] args) {
 		
-	String fullName = plus(firstName,lastName);
 	
-	printName(fullName);
+	printName(firstName,lastName);
 	
 	
 	
@@ -23,12 +22,13 @@ public class Check {
 	robotPet.introduce();
 	}
 
-	private static String plus(String firstName, String lastName) {
-		return firstName + lastName;
-	}
+//	private static String plus(String firstName, String lastName) {
+//		return firstName + lastName;
+//	}
 	
-	private static void printName(String fullName) {
-		System.out.println(fullName);
+	private static void printName(String firstName, String lastName) {
+		String plus = firstName + lastName;
+		System.out.println(plus);
 	}
 	
 	
